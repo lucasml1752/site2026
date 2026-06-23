@@ -1,76 +1,82 @@
-/* Configurações Globais (Zera as margens padrões que vêm no navegador) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Estilo do Corpo (Body) */
 body {
-    background-color: #f4f7f6; /* Cor de fundo suave */
-    color: #333; /* Cor do texto principal */
-    transition: background-color 0.5s ease; /* Efeito suave quando o JS mudar a cor */
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    transition: 0.4s;
 }
 
-/* Estilo do Cabeçalho */
 header {
-    background-color: #4A90E2; /* Cor azul moderna */
+    background: #1e3a8a;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 40px;
 }
 
-/* Container para centralizar o conteúdo no meio da tela */
+header p {
+    font-size: 18px;
+}
+
 .container {
-    max-width: 800px;
-    margin: 30px auto; /* Centraliza horizontalmente */
-    padding: 0 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Estilo dos Blocos de Conteúdo (Cards) */
 .card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-bottom: 20px; /* Espaço entre um card e outro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
 .card h2 {
-    color: #4A90E2;
     margin-bottom: 15px;
 }
 
-/* Estilo do Botão Interativo */
+.card ul {
+    margin-left: 20px;
+}
+
 button {
-    background-color: #2ECC71; /* Cor verde */
+    background: #2563eb;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
     margin-top: 15px;
-    transition: background 0.3s;
 }
 
-/* Efeito quando passa o mouse por cima do botão (Hover) */
 button:hover {
-    background-color: #27AE60; /* Verde mais escuro */
+    background: #1d4ed8;
 }
 
-/* Estilo do Rodapé */
 footer {
+    background: #111827;
+    color: white;
     text-align: center;
     padding: 20px;
-    color: #777;
-    font-size: 0.9rem;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+/* Tema escuro */
+.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #1f2937;
+    color: white;
 }
